@@ -9,6 +9,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Motivation Station</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Fade in animation */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-out;
+        }
+    </style>
 </head>
 
 <body>
@@ -16,7 +27,7 @@
         <h1>Welcome to <span>Motivation Station</span></h1>
         <p>Your go-to place for <span>inspiration</span> and <span>motivation</span>!</p>
     </header>
-    <main>
+    <main class="fade-in"> <!-- Apply fade-in animation to the main content -->
         <section class="video">
             <h2>Watch this Inspiring Video</h2>
             <video width="560" height="315" controls autoplay muted>
@@ -32,6 +43,15 @@
                 <button type="submit">Subscribe</button>
             </form>
         </section>
+        <section class="social">
+            <h2>Share this Page</h2>
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+        </section>
         <section class="more-content">
             <a href="content.html" class="button">Explore More</a>
         </section>
@@ -42,37 +62,5 @@
 </body>
 
 </html>
-content.html
-
-html
-Copy code
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Additional Content</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-    <header>
-        <h1>Additional Content</h1>
-    </header>
-    <main>
-        <section class="image">
-            <h2>Discover More</h2>
-            <img src="your-image-source.jpg" alt="AI-generated image">
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Motivation Station. All rights reserved.</p>
-    </footer>
-</body>
-
-</html>
-
 
 
